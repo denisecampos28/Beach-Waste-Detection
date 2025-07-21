@@ -16,8 +16,8 @@ Model v1 achieved the most balanced and reliable performance. Model v2 had highe
 
 
 Final Evaluation For Model v1:
- - Accuracy: 97%
- - F1 Score: 0.97
+ - Accuracy: **97%**
+ - F1 Score: **0.97**
  - Model Stability: No signs of overfitting or underfitting
 
 ### Data
@@ -54,13 +54,23 @@ To prepare the data for modeling, several cleaning and transformation steps were
 ### Training
 
 Software: GoogleCollab, Pandas, Numpy, Matplotlib, Tensorflow, Keras
+
 Hardware: Trained on a windows PC
+
 Model Architecture: MobileNetV2  with a custom classification head
+
 Loss Function: Binary cross-entropy
+
 Optimizer: Adam
+
 Epochs: 20
+
 Early Stopping: Enabled with patience of 4
+
 Checkpoints: Best model saved during training
+
+
+
 
 **Model v1:**
  - no dropout
@@ -89,6 +99,10 @@ Checkpoints: Best model saved during training
 
 
 <img width="432" height="167" alt="mc1" src="https://github.com/user-attachments/assets/603d4f48-817a-435b-8c57-1bae60d38c7a" />
+
+
+
+
 
 
 
