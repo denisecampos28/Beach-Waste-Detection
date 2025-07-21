@@ -22,10 +22,15 @@ Final Evaluation For Model v1:
 
 ### Data
 Type: Image dataset (.jpg images)
+
 Name: Plastic on Sand Image Classification
+
 Source: Public dataset hosted on Kaggle
+
 Total Images Used: 152 (76 clean, 76 dirt)
+
 Train/Validation Split: ~80/20
+
 Classes:
   - Clean: Beach images without visible trash
   - Dirt: Beach images with visible waste
