@@ -9,8 +9,8 @@ This repository contains a computer vision project that uses deep learning to au
 This project classifies beach photos into two categories: Clean and Dirt (i.e., visibly polluted). A dataset of labeled images was used to train and evaluate a binary image classifier based on MobileNetV2, a pre-trained convolutional neural network architecture.
 
 Two versions of the model were developed:
- -**Model v1:** A straightforward MobileNetV2 classifier using a single dense output layer.
- -**Model v2:** An improved version that includes an additional dense layer and dropout to improve generalization.
+ - **Model v1:** A straightforward MobileNetV2 classifier using a single dense output layer.
+ - **Model v2:** An improved version that includes an additional dense layer and dropout to improve generalization.
 
 Model v1 achieved the most balanced and reliable performance. Model v2 had higher validation accuracy but slightly less stable learning behavior.
 
