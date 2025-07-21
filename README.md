@@ -52,6 +52,9 @@ To prepare the data for modeling, several cleaning and transformation steps were
   - Directory-based loading with image_dataset_from_directory()
 
 ### Training
+
+Software: GoogleCollab, Pandas, Numpy, Matplotlib, Tensorflow, Keras
+Hardware: Trained on a windows PC
 Model Architecture: MobileNetV2  with a custom classification head
 Loss Function: Binary cross-entropy
 Optimizer: Adam
@@ -59,19 +62,20 @@ Epochs: 20
 Early Stopping: Enabled with patience of 4
 Checkpoints: Best model saved during training
 
-Model v1:
+**Model v1:**
  - no dropout
  - global average pooling
  - dense layer with 1 unit and sigmoid activation
  - trained for about 10 epochs
 
-Model v2:
+**Model v2:**
  - dropout layer (0.3)
  - global average pooling
  - dense layer (128 units, ReLU activation)
  - final dense layer with 1 unit and sigmoid activation
 
-### Performance
+
+### Performance Comparison
 
 **Model v1:**
   - More stable loss/accuracy curves
@@ -85,6 +89,9 @@ Model v2:
 
 
 <img width="432" height="167" alt="mc1" src="https://github.com/user-attachments/assets/603d4f48-817a-435b-8c57-1bae60d38c7a" />
+
+
+
 
 
 
@@ -104,7 +111,50 @@ Model v2:
 
 
 
+## Conclusion 
 
+This project successfully built a binary image classification model that distinguishes between clean and dirty beaches using deep learning. The final model achieved strong performance with over 97% accuracy and balanced precision/recall between the two classes. Through data cleaning,  and experimenting with different model heads, I was able to achieve great performance. The project demonstrated the power of transfer learning for small, real-world datasets and highlighted the importance of careful data curation in computer vision.
+
+## Future Work 
+
+To further improve this model, I’d like to:
+  - Collect more high-quality clean beach images to balance the dataset and avoid overfitting.
+  - Try different base models (EfficientNet, ResNet50) and compare their performance.
+  - Test the model on real-world photos taken from various beaches to evaluate generalizability.
+
+## How to reproduce results 
+
+1.) Download the Data from Kaggle 
+
+2.) Download all the required libraries 
+
+3.) Run the Notebook
+
+4.) Compare Models 
+
+
+## Overview of files in repository 
+ - beachwaste_p2.ipynb: this file contains all the clean, preprocessing, model creation, and evaluation
+ - feas_and_proto (1).ipynb: this contains my orignal cleaning, preprocessing, model and evaluation with the old, bad dataset
+ - beach-waste-detection-dataset: zip file of the old bad dataset
+ - Plastic on beach: dataset used
+
+
+## Software Setup 
+
+| Package        | Version (or Minimum) |
+|----------------|----------------------|
+| TensorFlow     | >= 2.11              |
+| Keras          | Built-in             |
+| Pandas         | >= 1.5               |
+| NumPy          | >= 1.22              |
+| Matplotlib     | >= 3.5               |
+| Google Colab   | (Used for training)  |
+
+
+## Data Download 
+
+https://www.kaggle.com/datasets/rogeriovaz/plastic-on-sand-image-classification
 
 
 
