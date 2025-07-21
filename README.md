@@ -14,7 +14,7 @@ Two versions of the model were developed:
 
 Model v1 achieved the most balanced and reliable performance. Model v2 had higher validation accuracy but slightly less stable learning behavior.
 
-Final Evaluation For Model v1
+Final Evaluation For Model v1:
  -Accuracy: 97%
  -F1 Score: 0.97
  -Model Stability: No signs of overfitting or underfitting
