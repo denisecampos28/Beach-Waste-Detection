@@ -59,23 +59,48 @@ Epochs: 20
 Early Stopping: Enabled with patience of 4
 Checkpoints: Best model saved during training
 
+Model v1:
+ - no dropout
+ - global average pooling
+ - dense layer with 1 unit and sigmoid activation
+ - trained for about 10 epochs
+
+Model v2:
+ - dropout layer (0.3)
+ - global average pooling
+ - dense layer (128 units, ReLU activation)
+ - final dense layer with 1 unit and sigmoid activation
+
 ### Performance
 
-Model v1:
+**Model v1:**
   - More stable loss/accuracy curves
   - High precision and recall for both classes
   - No signs of overfitting
 
-Model v2:
+<img width="1189" height="490" alt="m1" src="https://github.com/user-attachments/assets/58618073-38dc-4cb2-889b-002eed5da0a1" />
+
+
+<img width="435" height="393" alt="cm1" src="https://github.com/user-attachments/assets/5f537c72-4efa-4bda-af84-5e4f9dd01d37" />
+
+
+<img width="432" height="167" alt="mc1" src="https://github.com/user-attachments/assets/603d4f48-817a-435b-8c57-1bae60d38c7a" />
+
+
+
+**Model v2:**
   - Higher validation accuracy (93.3%)
   - Slight signs of overfitting on training accuracy
   - Not selected as final model due to slightly higher variance
 
 
+<img width="1189" height="490" alt="m2" src="https://github.com/user-attachments/assets/6042f114-5198-405f-8beb-e255ee9fe8d4" />
 
 
+<img width="435" height="393" alt="cm2" src="https://github.com/user-attachments/assets/742f096d-0a5a-4821-8852-7110263f8bce" />
 
 
+<img width="434" height="165" alt="cmm2" src="https://github.com/user-attachments/assets/0d138351-e6d5-4e65-9512-ef9923f228ad" />
 
 
 
