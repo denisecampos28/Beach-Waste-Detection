@@ -15,9 +15,9 @@ Two versions of the model were developed:
 Model v1 achieved the most balanced and reliable performance. Model v2 had higher validation accuracy but slightly less stable learning behavior.
 
 Final Evaluation For Model v1:
- -Accuracy: 97%
- -F1 Score: 0.97
- -Model Stability: No signs of overfitting or underfitting
+ - Accuracy: 97%
+ - F1 Score: 0.97
+ - Model Stability: No signs of overfitting or underfitting
 
 ### Data
 Type: Image classification dataset
@@ -35,14 +35,14 @@ At the beginning of this project, I used a different beach waste dataset from Ka
 
 I considered generating synthetic clean images to rebalance the dataset, but ultimately decided it didn’t make sense to use high-level image generation tools to support a lower-level classification task. Instead, I searched for a better dataset and eventually found the one used in this final version of the project, also hosted on Kaggle.
 
-#### Preprocessing
+### Preprocessing
 To prepare the data for modeling, several cleaning and transformation steps were performed: 
   -Image resizing to 224x224 (which is MobileNetV2 input)
   -Rescaling pixel values to [0, 1]
   -Data augmentation (random flips, zoom, rotation)
   -Directory-based loading with image_dataset_from_directory()
 
-#### Training
+### Training
 Model Architecture: MobileNetV2  with a custom classification head
 Loss Function: Binary cross-entropy
 Optimizer: Adam
@@ -50,7 +50,7 @@ Epochs: 20
 Early Stopping: Enabled with patience of 4
 Checkpoints: Best model saved during training
 
-#### Performance
+### Performance
 
 Model v1:
   -More stable loss/accuracy curves
