@@ -88,9 +88,8 @@ Checkpoints: Best model saved during training
 ### Performance Comparison
 
 **Model v1:**
-  - More stable loss/accuracy curves
-  - High precision and recall for both classes
-  - No signs of overfitting
+The accuracy graph shows how well the model predicts correctly during training vs validation. Validation accuracy peaked arounf 97%, which means the model generalized well and wasnt just memorizing the data. The loss graph shows how "wrong" the models predictions are. Both training and validation loss are consistently decreasing, which is good. There is a smooth curve with no sharp jumps, which equates to stable training.
+
 
 <img width="1189" height="490" alt="m1" src="https://github.com/user-attachments/assets/58618073-38dc-4cb2-889b-002eed5da0a1" />
 
@@ -110,9 +109,9 @@ Checkpoints: Best model saved during training
 
 
 **Model v2:**
-  - Higher validation accuracy (93.3%)
-  - Slight signs of overfitting on training accuracy
-  - Not selected as final model due to slightly higher variance
+There are some weird things going on with the accuracy graph. The training accuracy is lower than validation accuracy for many epochs. Usually its the other way around. This could mean there is over-regularization going on. My dropout and dense layers could be supressing learning too much. For the loss graph, loss values are very high. The model is getting labels right but confidence is low.
+
+
 
 
 <img width="1189" height="490" alt="m2" src="https://github.com/user-attachments/assets/6042f114-5198-405f-8beb-e255ee9fe8d4" />
