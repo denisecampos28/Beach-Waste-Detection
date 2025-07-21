@@ -136,7 +136,6 @@ To further improve this model, I’d like to:
 ## Overview of files in repository 
  - beachwaste_p2.ipynb: this file contains all the clean, preprocessing, model creation, and evaluation
  - feas_and_proto (1).ipynb: this contains my orignal cleaning, preprocessing, model and evaluation with the old, bad dataset
- - beach-waste-detection-dataset: zip file of the old bad dataset
  - Plastic on beach: dataset used
 
 
